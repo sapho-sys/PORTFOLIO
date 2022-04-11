@@ -1,0 +1,125 @@
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Portfolio</title>
+        <link rel="stylesheet" type="text/css" href="Mine.css"/>
+        
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+        
+    </head>
+    
+<body>
+    
+    
+
+
+<div class="topnav" id="myTopnav">
+    <a class="active">Full Stack Agile Developer Portfolio</a>
+    <a id="myBtn">Front-End</a>
+    <a href="#contact">Back-End</a>
+    <a href="#about">Online CV</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+    <!-- <div class="bg-image"></div> -->
+
+    <div class="bg-text">
+      <h2> Sapho Nkunzi</h2>
+      <img class="Me" src="/images/sapho nkunzi.jpeg">
+      <p>My name is Sapho Nkunzi, born and raised by Mother (which I have to say she did a great job) in a very busy township in Cape Town (Khayelitsha). Matriculated in 2016 at Esangweni Senior Secondary School in my area eKuyasa,started pursuing a tertiary qualification
+        in 2018 and spent two years studying a National Higher Certificate in Financial Information Systems(Phased-out in 2019) where I majored in large components of Accounting,Business/Financial Systems Analysis and Programming(Academics record confirms it) 
+        then articulated to a Diploma in Accountancy majoring in Internal Auditing where I recently(2021) graduated at the Cape Peninsula University of Technology.</p>
+      </div>
+      <!-- <div class="container">
+       
+      
+      
+    </div> -->
+
+
+    <div class="main_container">
+      <!-- The Modal -->
+      <div class="container">
+      <div id="myModal" class="modal">
+        <div class="mode">
+          <span class="close">&times;</span>
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          
+          <div class="container">
+            <div class="mySlides">
+              
+              <img src="/images/vanilla.JPG" width="450px" class="responsive">
+              <div class="overlay">
+                  <div class="text"><a href='https://sapho-sys.github.io/first-webpage/'><button class="proj">View Project</button></a></div>
+                </div>
+            </div>
+          
+            <div class="mySlides">
+              
+              <img src="/images/simple-grid.JPG" width="450px" class="responsive">
+              <div class="overlay">
+                  <div class="text"><a href='https://sapho-sys.github.io/FirstGridPage/'><button class="proj">View Project</button></a></div>
+                </div>
+            </div>
+          
+            
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="/images/vanilla.JPG" style="width:100%" onclick="currentSlide(1)" alt="Basic Vanilla CSS WebPage">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/simple-grid.JPG" style="width:100%" onclick="currentSlide(2)" alt="Basic Simple Grid WebPage">
+              </div>
+            
+            </div>
+        </div>
+        </div>
+        </div>
+      
+      </div>
+      </div>
+      </div>
+      <script src="Mine.js"></script>
+
+
+
+   
+   
+
+    </body>
+
+
+
+
+
+
+
+
+
+</html>
