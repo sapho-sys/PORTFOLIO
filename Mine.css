@@ -1,14 +1,14 @@
-body {
+/* body {
     background-image:url('/images/cape-town-2107377_640.jpg') ;
    background-repeat: no-repeat;
    background-size: cover;
    
-}
+} */
 
 
 p {
    text-align:top;
-   font-size:8pt;
+   font-size:11pt;
    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    padding: 1pt;
    float:center;
@@ -196,7 +196,7 @@ height:500px;/* Full height */
 overflow: auto; /* Enable scroll if needed */
 /* background-color: rgb(0,0,0);  */
 /* background-color: rgba(0,0,0,0.4);  */
-border-radius: 40pt;
+border-radius: 20pt;
 background-color: white;
 
 }
@@ -220,9 +220,9 @@ background-color: #fefefe;
 z-index: 3; 
 
 padding: 20px;
-border: 1px solid #888;
+/* border: 1px solid #888; */
 width:50%;
-height:520px;
+height:490px;
 margin-left: auto;
 margin-right: auto;
 
@@ -251,12 +251,20 @@ cursor: pointer;
 }
 
 @media (max-width:760px){
+  .bg-text{
+    margin-top: 200px;
+
+  }
 .modal{
-width:100%;
+width:95%;
+height:100%;
+
 
 }
 .modal-content{
-width:70%;
+width:95%;
+
+
 }
 }
 
@@ -319,11 +327,15 @@ body, html {
  padding: 20px;
  text-align: center;
 }
+/* .bg-text p{
+  font-size: 11pt;
+} */
 
 
 .topnav {
   overflow: hidden;
   background-color: #333;
+  z-index: 3;
  
   
 }
@@ -383,8 +395,15 @@ h2{
     text-align: left;
   }
   .bg-text{
-    margin-top:50px;
+    
+    margin-top:100px;
   }
+  .body{
+    
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
   
   
 
