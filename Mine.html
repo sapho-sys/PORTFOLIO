@@ -19,7 +19,7 @@
 
 <div class="topnav" id="myTopnav">
     <a class="active">Full Stack Agile Developer Portfolio</a>
-    <a href="#news">Front-End</a>
+    <a id="myBtn">Front-End</a>
     <a href="#contact">Back-End</a>
     <a href="#about">About</a>
     <a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -37,16 +37,71 @@
     }
     </script>
 
-    <div class="bg-image"></div>
+    <!-- <div class="bg-image"></div> -->
 
     <div class="bg-text">
       <h2> Sapho Nkunzi</h2>
       <img class="Me" src="/images/sapho nkunzi.jpeg">
-      <div class="container">
+      </div>
+      <!-- <div class="container">
        
       
       
-    </div>
+    </div> -->
+
+
+    <div class="main_container">
+      <!-- The Modal -->
+      <div class="container">
+      <div id="myModal" class="modal">
+        <div class="mode">
+      
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <div class="container">
+            <div class="mySlides">
+              
+              <img src="/images/vanilla.JPG" width="450px" class="responsive">
+              <div class="overlay">
+                  <div class="text"><a href='https://sapho-sys.github.io/first-webpage/'><button class="proj">View Project</button></a></div>
+                </div>
+            </div>
+          
+            <div class="mySlides">
+              
+              <img src="/images/simple-grid.JPG" width="450px" class="responsive">
+              <div class="overlay">
+                  <div class="text"><a href='https://sapho-sys.github.io/FirstGridPage/'><button class="proj">View Project</button></a></div>
+                </div>
+            </div>
+          
+            
+              
+            <a class="prev" onclick="plusSlides(-1)">❮</a>
+            <a class="next" onclick="plusSlides(1)">❯</a>
+          
+            <div class="caption-container">
+              <p id="caption"></p>
+            </div>
+          
+            <div class="row">
+              <div class="column">
+                <img class="demo cursor" src="/images/vanilla.JPG" style="width:100%" onclick="currentSlide(1)" alt="Basic Vanilla CSS WebPage">
+              </div>
+              <div class="column">
+                <img class="demo cursor" src="/images/simple-grid.JPG" style="width:100%" onclick="currentSlide(2)" alt="Basic Simple Grid WebPage">
+              </div>
+            
+            </div>
+        </div>
+        </div>
+        </div>
+      
+      </div>
+      </div>
+      </div>
+      <script src="Mine.js"></script>
 
 
 

@@ -16,6 +16,252 @@ p {
 }
 
 
+.responsive{
+  max-width:100%;
+  height:auto;
+}
+
+img {
+vertical-align: middle;
+display: center;
+/* width:170px;
+height:170px; */
+}
+
+/* .main_container{
+ margin-right: auto;
+ margin-left: auto;
+ width:50%;
+} */
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+position: relative;
+
+/*max-width: 1024px;*/
+  margin: 0 auto;
+  /* overflow: auto; */
+
+
+}
+
+/* Hide the images by default */
+.mySlides {
+display: none;
+
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+  cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+  }
+  .prev{
+    left: 0;
+  border-radius: 3px 0 0 3px;
+
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+ 
+
+/* Container for image text */
+.caption-container {
+text-align: center;
+background-color: #222;
+padding: 2px 16px;
+color: white;
+}
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+/* Six columns side by side */
+.column {
+float: left;
+width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+opacity: 1;
+}
+
+/* Over ontop of each projects */
+.responsive {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  /* background-color: #008CBA; */
+  overflow: hidden;
+  width: 100%;
+  height:0;
+  transition: .5s ease;
+}
+
+.container:hover .overlay {
+  bottom: 0;
+  height: 85%;
+}
+.mySlides img{
+  width:400px;
+  height:400px;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+
+
+
+ .overlay {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute; 
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height:0%;
+  
+  
+  
+  text-align: center;
+} 
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+/* position: fixed; Stay in place */
+z-index: 3; 
+padding-top: 10px; /* Location of the box */
+/* left: 0;
+top: 0; */
+width:50%;/* Full width */
+height:500px;/* Full height */
+overflow: auto; /* Enable scroll if needed */
+/* background-color: rgb(0,0,0);  */
+/* background-color: rgba(0,0,0,0.4);  */
+border-radius: 40pt;
+background-color: white;
+
+}
+/* button */
+.proj{
+  
+    background-color: white;
+    color: black;
+    border: 2px solid #4CAF50; /* Green */
+    padding: 12px 28px;
+  
+}
+.column img{
+  display: none;
+
+}
+
+/* Modal Content */
+.modal-content {
+background-color: #fefefe;
+z-index: 3; 
+
+padding: 20px;
+border: 1px solid #888;
+width:50%;
+height:520px;
+margin-left: auto;
+margin-right: auto;
+
+
+}
+.mode{
+margin-left: auto;
+margin-right: auto;
+width:100%;
+height:200px;
+}
+
+/* The Close Button */
+.close {
+color: #aaaaaa;
+float: right;
+font-size: 28px;
+font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+color: #000;
+text-decoration: none;
+cursor: pointer;
+}
+
+@media (max-width:760px){
+.modal{
+width:100%;
+
+}
+.modal-content{
+width:70%;
+}
+}
+
+
+
 
 
 
@@ -58,6 +304,7 @@ body, html {
 
 /* Position text in the middle of the page/image */
 .bg-text {
+  margin-top: 50px;
  background-color: rgb(0,0,0); /* Fallback color */
  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
  color: white;
@@ -67,7 +314,7 @@ body, html {
  top: 50%;
  left: 50%;
  transform: translate(-50%, -50%);
- z-index: 2;
+ z-index: 0;
  width: 80%;
  padding: 20px;
  text-align: center;
@@ -115,7 +362,7 @@ h2{
   display: none;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   .topnav a:not(:first-child) {display: none;}
   .topnav a.icon {
     float: right;
@@ -123,7 +370,7 @@ h2{
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 760px) {
   .topnav.responsive {position: relative;}
   .topnav.responsive .icon {
     position: absolute;
@@ -134,6 +381,9 @@ h2{
     float: none;
     display: block;
     text-align: left;
+  }
+  .bg-text{
+    margin-top:50px;
   }
   
   
