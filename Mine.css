@@ -251,10 +251,10 @@ cursor: pointer;
 }
 
 @media (max-width:760px){
-  .bg-text{
-    margin-top: 200px;
+  /* .bg-text{
+    margin-top: 50px;
 
-  }
+  } */
 .modal{
 width:95%;
 height:100%;
@@ -396,7 +396,7 @@ h2{
   }
   .bg-text{
     
-    margin-top:100px;
+    margin-top:200px;
   }
   .body{
     
