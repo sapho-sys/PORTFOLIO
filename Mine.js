@@ -70,3 +70,13 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+
+//nav
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
